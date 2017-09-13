@@ -11,3 +11,10 @@ export const setDisplayProp = (property) => {
     property
   }
 };
+
+export const getData = (data) => {
+  return {
+    type: 'GET_DATA',
+    data
+  }
+};

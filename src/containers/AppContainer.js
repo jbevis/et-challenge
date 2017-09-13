@@ -1,21 +1,22 @@
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import { setDisplayGroup, setDisplayProp } from '../actions/index';
+import { setDisplayGroup, setDisplayProp, getData } from '../actions/index';
 import App from '../components/App';
 import { formatGroupData } from '../ops/helper';
+
 
 const mapStateToProps = (state) => {
   return {
     displayGroup: state.displayGroup,
-    displayProp: state.displayProp,
+    displayProperty: state.displayProperty,
     groups: formatGroupData(state.data)
   }
 };
 
-const mapDispatchToProps = (dispatch) =>{
+const mapDispatchToProps = (dispatch) => {
   return {
-    setDisplayGroup: (group) => dispatch(setDisplayGroup)),
-    setDisplayProp: (property) => dispatch(setDisplayProp))
+    setDisplayGroup: (group) => dispatch(setDisplayGroup(group)),
+    setDisplayProp: (property) => dispatch(setDisplayProp(property)),
+    getData: (data) => dispatch(getData(data))
   }
 };
 

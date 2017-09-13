@@ -6,17 +6,19 @@ import '../styles/Navigation.css';
 const Navigation = ({ displayGroup, groups, setDisplayGroup, setDisplayProp }) => {
   return (
     <nav id='navigation'>
-      { groups.map(group => (
-          <Link linkText={ group.name } handleClick={ setDisplayGroup } />
-          { if (displayGroup !== group.name) {
-            return '';
-          } else {
-            return getProperties(groups, displayGroup).map(name => (
-                <Link linkText={ name } handleClick={ setDisplayProp } />
-              ))
-            }
-          }
-      ))}
+      { groups.map(group => {
+        return (
+          <div className='nav-links'>
+            <Link linkText={ group.name } handleClick={ setDisplayGroup } />
+            { displayGroup !== group.name ? '' : 
+               getProperties(groups, displayGroup).map(name => {
+                return(
+                  <Link linkText={ name } handleClick={ setDisplayProp } />
+                );
+              })
+            }}
+          </div>
+      )})}
     </nav>
   );
 };
