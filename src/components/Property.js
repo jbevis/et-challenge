@@ -1,7 +1,7 @@
 import React from 'react';
 import { capitalize, formatName, formatAppKeys } from '../ops/helper';
 
-const Property = ({ obj } => {
+const Property = ({ obj }) => {
   const name = obj.name;
   const type = capitalize(obj.data_type);
   const appKeys = obj.app_keys.map(formatName);
@@ -23,6 +23,6 @@ const Property = ({ obj } => {
       </div>
     </section>
   );
-});
+};
 
 export default Property;

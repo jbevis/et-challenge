@@ -1,10 +1,10 @@
-const PropsReducer = (state, action) => {
+const displayProp = (state='', action) => {
   switch (action.type) {
     case 'SET_DISPLAY_PROP':
-      return Object.assign(...state, displayProperty: action.property)
+      return Object.assign({}, state, action.property)
     default:
       return state;
   }
 };
 
-export default PropsReducer;
+export default displayProp;

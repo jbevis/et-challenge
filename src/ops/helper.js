@@ -16,11 +16,11 @@ export const getProperties = (groups, displayGroup) => {
 };
 
 export const capitalize = (string) => {
-  string.charAt(0).toUpperCase() + string.slice(1);
+  return string.charAt(0).toUpperCase() + string.slice(1);
 };
 
 export const formatName = (string) => {
-  string.split('_').map(capitalize).join(' ')
+  return string.split('_').map(capitalize).join(' ')
 };
 
 export const formatAppKeys = (array) => array.join(", ");

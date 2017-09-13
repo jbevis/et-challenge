@@ -1,10 +1,12 @@
 import { combineReducers } from 'redux';
-import Groups from './GroupReducer';
-import Properties from './PropReducer';
+import displayGroup from './GroupReducer';
+import displayProp from './PropReducer';
+import data from './DataReducer';
 
 const RootReducer = combineReducers({
-  Groups,
-  Properties
+  displayGroup,
+  displayProp,
+  data
 });
 
 export default RootReducer;
