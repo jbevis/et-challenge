@@ -1,10 +1,10 @@
 import React from 'react';
 import { capitalize, formatName, formatAppKeys } from '../ops/helper';
 
-const Property = ({ obj }) => {
-  const name = obj.name;
-  const type = capitalize(obj.data_type);
-  const appKeys = obj.app_keys.map(formatName);
+const Property = ({ object }) => {
+  const name = object.name;
+  const type = capitalize(object.data_type);
+  const appKeys = object.app_keys.map(formatName);
 
   return (
     <section className='card-info'>

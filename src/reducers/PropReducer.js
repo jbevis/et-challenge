@@ -1,10 +1,10 @@
-const displayProp = (state='', action) => {
+const displayProperty = (state='', action) => {
   switch (action.type) {
     case 'SET_DISPLAY_PROP':
-      return Object.assign({}, state, action.property)
+      return action.property;
     default:
       return state;
   }
 };
 
-export default displayProp;
+export default displayProperty;

@@ -2,13 +2,13 @@ import React from 'react';
 import { formatName } from '../ops/helper';
 
 
-const Link = ({ linkText, handleClick }) => {
+const Link = ({ cssClass, linkText, handleClick }) => {
   return(
-    <h5 className='link-category'
-        key={linkText} 
-        onClick={ ()=> handleClick(linkText) }>
-      { formatName(linkText)}
-    </h5>
+    <p className={ cssClass }
+       key={linkText} 
+       onClick={ ()=> handleClick(linkText) }>
+      { formatName(linkText) }
+    </p>
   );
 };
 
