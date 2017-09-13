@@ -17,13 +17,16 @@ class App extends Component {
   const { displayGroup, displayProperty, groups, setDisplayGroup, setDisplayProp, getData } = this.props;
     return (
       <main className='app'>
-        <Navigation groups={ groups }
-                    displayGroup={ displayGroup }
-                    setDisplayGroup={ setDisplayGroup }
-                    setDisplayProp={ setDisplayProp } />
-        <MainDisplay groups={ groups }
-                     displayGroup={ displayGroup }
-                     displayProperty={ displayProperty } />
+        <h1>EverTrue Challenge: Property Navigation</h1>
+        <div className='main-app'>
+          <Navigation groups={ groups }
+                      displayGroup={ displayGroup }
+                      setDisplayGroup={ setDisplayGroup }
+                      setDisplayProp={ setDisplayProp } />
+          <MainDisplay groups={ groups }
+                       displayGroup={ displayGroup }
+                       displayProperty={ displayProperty } />
+        </div>
       </main>
     );
   }
