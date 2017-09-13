@@ -6,6 +6,7 @@ import '../styles/Navigation.css';
 const Navigation = ({ displayGroup, groups, setDisplayGroup, setDisplayProp }) => {
   return (
     <nav id='navigation'>
+      <h2>Navigation</h2>
       { groups.map(group => {
         return (
           <div className='nav-links'>
