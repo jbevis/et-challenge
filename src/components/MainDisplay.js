@@ -10,10 +10,10 @@ const MainDisplay = ({ groups, displayGroup, displayProp }) => {
           return "";
         } else {
           return(
-            <article className='prop-card'>
-              <h3 className='prop-card-title'>{ formatName(group.name) }</h3>
+            <section className='main-display'>
+              <h3 className='group-title'>{ formatName(group.name) }</h3>
               <PropertyCard info={ group.containing_object.properties } displayProp={ displayProp } />
-            </article>
+            </section>
           );
         }
       }) }

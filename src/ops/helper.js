@@ -19,8 +19,8 @@ export const capitalize = (string) => {
   string.charAt(0).toUpperCase() + string.slice(1);
 };
 
-export const fieldNameToString = (string) => {
+export const formatName = (string) => {
   string.split('_').map(capitalize).join(' ')
 };
 
-
+export const formatAppKeys = (array) => array.join(", ");
