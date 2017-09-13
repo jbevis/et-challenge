@@ -2,7 +2,7 @@ import React from 'react';
 import PropertyCard from './PropertyCard';
 import { formatName } from '../ops/helper';
 
-const MainDisplay = ({ groups, displayGroup, displayProp }) => {
+const MainDisplay = ({ groups, displayGroup, displayProperty }) => {
   return(
     <section className='main-display'>
       { groups.map(group => {
@@ -11,8 +11,8 @@ const MainDisplay = ({ groups, displayGroup, displayProp }) => {
         } else {
           return(
             <section className='main-display'>
-              <h3 className='group-title'>{ formatName(group.name) }</h3>
-              <PropertyCard info={ group.containing_object.properties } displayProp={ displayProp } />
+              <h2 className='group-title'>{ formatName(group.name) }</h2>
+              <PropertyCard info={ group.containing_object.properties } displayProperty={ displayProperty } />
             </section>
           );
         }

@@ -9,14 +9,14 @@ const Navigation = ({ displayGroup, groups, setDisplayGroup, setDisplayProp }) =
       { groups.map(group => {
         return (
           <div className='nav-links'>
-            <Link linkText={ group.name } handleClick={ setDisplayGroup } />
+            <Link cssClass='group-name' linkText={ group.name } handleClick={ setDisplayGroup } />
             { displayGroup !== group.name ? '' : 
                getProperties(groups, displayGroup).map(name => {
                 return(
-                  <Link linkText={ name } handleClick={ setDisplayProp } />
+                  <Link cssClass='prop-name' linkText={ name } handleClick={ setDisplayProp } />
                 );
               })
-            }}
+            }
           </div>
       )})}
     </nav>

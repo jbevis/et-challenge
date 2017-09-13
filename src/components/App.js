@@ -10,13 +10,11 @@ class App extends Component {
   }
 
   componentDidMount () {
-    console.log('did mount: ', data)
     this.props.getData(data);
   }
 
   render() {
-  const { displayGroup, displayProp, groups, setDisplayGroup, setDisplayProp, getData } = this.props;
-
+  const { displayGroup, displayProperty, groups, setDisplayGroup, setDisplayProp, getData } = this.props;
     return (
       <main className='app'>
         <Navigation groups={ groups }
@@ -25,7 +23,7 @@ class App extends Component {
                     setDisplayProp={ setDisplayProp } />
         <MainDisplay groups={ groups }
                      displayGroup={ displayGroup }
-                     displayProp={ displayProp } />
+                     displayProperty={ displayProperty } />
       </main>
     );
   }

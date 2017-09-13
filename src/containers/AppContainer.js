@@ -5,7 +5,6 @@ import { formatGroupData } from '../ops/helper';
 
 
 const mapStateToProps = (state) => {
-  console.log(state.data)
   return {
     displayGroup: state.displayGroup,
     displayProperty: state.displayProperty,
