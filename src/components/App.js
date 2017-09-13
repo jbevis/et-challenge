@@ -10,6 +10,7 @@ class App extends Component {
   }
 
   componentDidMount () {
+    console.log('did mount: ', data)
     this.props.getData(data);
   }
 

@@ -1,8 +1,10 @@
 export const formatGroupData = (data) => {
+  console.log('data to format: ', data)
   const isGroup = (obj) => !!obj.containing_object;
+  const dataKeys = Object.keys(data)
 
-  return data.filter(isGroup).concat({
-    name: 'generalInfo',
+  return dataKeys.filter(isGroup).concat({
+    name: 'general_info',
     containing_object: {
       properties: data.filter(obj => !isGroup(obj))
     }

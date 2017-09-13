@@ -8,11 +8,6 @@ import './styles/index.css';
 import registerServiceWorker from './registerServiceWorker';
 
 const devTools = window.__REDUX_DEVTOOLS_EXTENSION__&& window.__REDUX_DEVTOOLS_EXTENSION__();
-// const initialState = { 
-//   displayGroup: 'generalInfo',
-//   displayProperty: '',
-//   data
-// };
 const store = createStore(RootReducer, devTools);
 
 ReactDOM.render(
