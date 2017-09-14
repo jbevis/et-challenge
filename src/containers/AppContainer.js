@@ -7,8 +7,8 @@ import '../styles/App.css';
 
 const mapStateToProps = (state) => {
   return {
-    displayGroup: state.displayGroup,
-    displayProperty: state.displayProperty,
+    displayGroup: state.groups,
+    displayProperty: state.properties,
     groups: formatGroupData(state.data)
   }
 };
