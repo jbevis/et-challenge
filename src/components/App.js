@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import '../styles/App.css';
 import Navigation from './Navigation';
 import MainDisplay from './MainDisplay';
 import * as data from '../data/schema';
@@ -29,7 +28,7 @@ class App extends Component {
         </div>
       </main>
     );
-  }
-}
+  };
+};
 
 export default App;

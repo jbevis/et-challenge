@@ -2,13 +2,12 @@ import { connect } from 'react-redux';
 import { setDisplayGroup, setDisplayProp, getData } from '../actions/index';
 import App from '../components/App';
 import { formatGroupData } from '../ops/helper';
-import '../styles/App.css';
 
 
 const mapStateToProps = (state) => {
   return {
-    displayGroup: state.groups,
-    displayProperty: state.properties,
+    displayGroup: state.groupToDisplay,
+    displayProperty: state.propertyToDisplay,
     groups: formatGroupData(state.data)
   }
 };
