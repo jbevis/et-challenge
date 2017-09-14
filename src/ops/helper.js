@@ -1,10 +1,10 @@
 export const formatGroupData = (data) => {
-  const isGroup = (obj) => !!obj.containing_object;
+  const hasContainingObj = (obj) => !!obj.containing_object;
 
-  return data.filter(isGroup).concat({
+  return data.filter(hasContainingObj).concat({
     name: 'general_info',
     containing_object: {
-      properties: data.filter(obj => !isGroup(obj))
+      properties: data.filter(obj => !hasContainingObj(obj))
     }
   })
 };
