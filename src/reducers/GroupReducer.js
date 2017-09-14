@@ -1,4 +1,4 @@
-const displayGroup = (state='general_info', action) => {
+const GroupReducer = (state='general_info', action) => {
   switch (action.type) {
     case 'SET_DISPLAY_GROUP':
       return action.group;
@@ -7,4 +7,4 @@ const displayGroup = (state='general_info', action) => {
   }
 };
 
-export default displayGroup;
+export default GroupReducer;

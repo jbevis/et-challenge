@@ -11,3 +11,59 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  height: 100px;
+  width: 100%;
+  background-color: #A8CEC5;
+  margin: 0px;
+  padding-top: 25px;
+}
+
+.main-app {
+  width: 100%;
+  display: flex;
+}
+
+#navigation {
+  width: 33.4%;
+  padding-left: 20px;
+
+}
+
+.main-display {
+  width: 66.6%;
+}
+
+.nav-links p {
+  cursor: pointer;
+}
+
+.nav-links p:hover {
+  color: #F1BD4C;
+  font-weight: 700;
+}
+
+.group-name {
+  font-weight: 700;
+}
+
+.card-info {
+  margin: 5px;
+  padding: 10px;
+  border: 2px solid #7CC6E2;
+  background-color: #B6DFEC;
+}
+
+.card-info-row {
+  display: flex;
+}
+
+.label {
+  margin-right: 15px;
+}

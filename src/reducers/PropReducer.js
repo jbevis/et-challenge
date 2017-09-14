@@ -1,4 +1,4 @@
-const displayProperty = (state='', action) => {
+const PropertyReducer = (state='', action) => {
   switch (action.type) {
     case 'SET_DISPLAY_PROP':
       return action.property;
@@ -9,4 +9,4 @@ const displayProperty = (state='', action) => {
   }
 };
 
-export default displayProperty;
+export default PropertyReducer;

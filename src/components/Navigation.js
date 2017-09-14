@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from './Link';
 import { getProperties } from '../ops/helper';
-import '../styles/Navigation.css';
 
 const Navigation = ({ displayGroup, groups, setDisplayGroup, setDisplayProp }) => {
   return (
